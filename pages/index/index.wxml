@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<scroll-view>
+  <view class='navi_group'>
+    <view class='navi_item' wx:for="{{titleArray}}" wx:key="*this" bindtap="tabClick" data-variable="{{index}}">{{item}}</view>
+  </view>
+
+  <view class='list' wx:for="{{newsList}}" wx:key="id">
+
+    <view class='list_item'>
+      <view class='list_item_content'>
+
+        <text>{{item.title}}</text>
+        <view class='text_desc'>
+
+          <text>{{item.source}}</text>
+          <text>{{item.date}}</text>
+        </view>
+
+      </view>
+
+
+      <image class='list_item_image' style="height: 220rpx; background-color: #eeeeee;" mode='scaleToFill' src='{{item.firstImage}}'></image>
+    </view>
+  </view>
+
+
+</scroll-view>
