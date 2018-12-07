@@ -1,9 +1,9 @@
 /**index.wxss**/
+@import "./weui-navbar.wxss";
 
 .navi_group {
   display: flex;
   flex-direction: row;
-  line-height: 80rpx;
 }
 
 .navi_item {
@@ -45,4 +45,9 @@
   display: flex;
   flex-direction: row;
   color: #a7a4a4;
+}
+
+.weui-tab__content {
+  padding-top: 60px;
+  text-align: center;
 }

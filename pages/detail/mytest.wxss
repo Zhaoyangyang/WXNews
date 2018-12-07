@@ -1,0 +1,39 @@
+/* pages/mypage/mytest.wxss */
+
+.scroll_vg {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+
+.title_desc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #aae1fc;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  margin-top: 20rpx;
+}
+
+.img_vg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20rpx;
+}
+
+.content_list {
+  margin-top: 20rpx;
+}
+.p_testStyle {
+ color: #8b8989;
+ text-indent: 60rpx;
+}
+.strong_testStyle {
+ text-indent: 60rpx;
+}

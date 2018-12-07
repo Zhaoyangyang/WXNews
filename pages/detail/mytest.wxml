@@ -1,0 +1,29 @@
+<!--pages/mypage/mytest.wxml-->
+<scroll-view class='scroll_vg'>
+  <view class='title'>{{title}} </view>
+  <view class='title_desc'>
+    <text>{{newsSource===''?"未知来源":newsSource}}</text>
+    <text>阅读{{newsNum}}</text>
+  </view>
+
+  <view class='content_list' wx:for="{{content}}" wx:key="id">
+    <view class='strong_testStyle'wx:if="{{item.type==='strong'}}">
+      <p>{{item.text}}</p>
+    </view>
+
+    <view class='img_vg' wx:if="{{item.type==='image' }}">
+      <image src='{{content[index].src}}'></image>
+
+    </view>
+
+    <view class='p_testStyle' wx:if="{{item.type==='p'}}">
+      <p >{{item.text}}</p>
+    </view>
+
+  </view>
+
+
+
+
+
+</scroll-view>
